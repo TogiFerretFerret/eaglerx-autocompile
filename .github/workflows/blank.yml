@@ -21,6 +21,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.SuperSecret }}
       # Runs a single command using the runners shell
       - name: Get Repo
         run: git clone https://gitlab.com/lax1dude/eaglercraftx-1.8.git
