@@ -27,5 +27,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Get Repo
         run: git clone https://gitlab.com/lax1dude/eaglercraftx-1.8.git
-      - run: git rm --cached eaglercraftx-1.8
+      - run: mv eaglercraftx-1.8/* ./
       - uses: stefanzweifel/git-auto-commit-action@v4
